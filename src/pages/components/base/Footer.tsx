@@ -1,3 +1,5 @@
+import React from "react";
+
 const navigation = [
   {
     name: "Facebook",
@@ -36,7 +38,7 @@ const navigation = [
   },
 ];
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className="bg-white shadow-md bottom-0">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
@@ -61,3 +63,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

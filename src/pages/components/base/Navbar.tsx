@@ -1,12 +1,13 @@
 import { Popover } from "@headlessui/react";
 import Image from "next/image";
 import { Logo } from "../../../../public";
+import React from "react";
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Navbar() {
+function Navbar() {
   return (
     <>
       <Popover
@@ -20,7 +21,7 @@ export default function Navbar() {
       >
         {({ open }) => (
           <>
-            <div className="mx-auto h-[4.5rem] flex justify-between max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto h-[5rem] flex justify-between max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="relative flex justify-between lg:gap-8 xl:grid xl:grid-cols-12">
                 <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
                   <div className="flex flex-shrink-0 items-center">
@@ -31,7 +32,7 @@ export default function Navbar() {
                         width={50}
                         height={50}
                       />
-                      <p className="hidden text-yellow-500 font-bold md:flex ml-2 items-center text-lg">{`PANCA SAKTI UNIVERSITY`}</p>
+                      <p className="hidden text-black font-bold md:flex ml-2 items-center text-lg">{`PANCA SAKTI UNIVERSITY`}</p>
                     </div>
                   </div>
                 </div>
@@ -46,7 +47,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="flex items-center ">
-                <button className="border font-bold uppercase w-40 shadow-md py-2 text-white rounded-md text-xs border-primary-blue bg-primary-blue">
+                <button className="border font-bold uppercase w-40 shadow-md py-3 text-white rounded-[4px] text-xs border-blue-500 bg-blue-500 hover:bg-blue-400">
                   Download Formulir
                 </button>
               </div>
@@ -57,3 +58,5 @@ export default function Navbar() {
     </>
   );
 }
+
+export default Navbar;
