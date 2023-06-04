@@ -18,10 +18,14 @@ module.exports = {
           grey: "#F6F6F6",
           blue: "#337AB7",
           red: "#B70404",
+          white: "#F9F5F6",
         },
         secondary: {
           grey: "#52616B",
         },
+      },
+      backgroundImage: {
+        "home-container": "url('https://picsum.photos/seed/picsum/400/800')",
       },
     },
   },
