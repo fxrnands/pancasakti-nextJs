@@ -21,11 +21,11 @@ function Navbar() {
       >
         {({ open }) => (
           <>
-            <div className="mx-auto h-[5rem] flex justify-between max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto h-[3.5rem] lg:h-[5rem] flex justify-between max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="relative flex justify-between ">
                 <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
                   <div className="flex flex-shrink-0 items-center">
-                    <div className="flex w-24 lg:w-full lg:mt-6 mt-12">
+                    <div className="flex w-28 lg:w-full lg:mt-6 mt-12">
                       <div>
                         <Image
                           src={Logo}
@@ -46,7 +46,7 @@ function Navbar() {
                 </div>
               </div>
               <div className="flex items-center ">
-                <button className="border font-bold uppercase w-24 lg:w-36 shadow-md py-1 text-white rounded-full text-[8px] lg:text-xs border-primary-blue bg-primary-blue hover:bg-blue-800">
+                <button className="border font-bold uppercase w-14 lg:w-36 shadow-md py-1 text-white rounded-full text-[6px] lg:text-xs border-primary-blue bg-primary-blue hover:bg-blue-800">
                   <p>Download </p>
                   <p>Formulir</p>
                 </button>
