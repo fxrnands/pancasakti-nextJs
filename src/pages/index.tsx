@@ -18,7 +18,7 @@ export default function Home() {
         <Image src={Header} className="w-full h-[40rem] object-cover" alt="" />
       </div>
       <div className="w-full relative bottom-[40rem] h-[45rem]">
-        <div className="relative max-w-6xl top-36 mb-40 mx-auto">
+        <div className="relative w-64 lg:w-full max-w-6xl top-16 lg:top-36 mb-40 mx-auto">
           <div className="flex justify-center">
             <Image src={LogoHeader} alt="" />
           </div>
@@ -28,11 +28,11 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="md:space-x-5 grid grid-rows-1 md:flex justify-center">
+          <div className="md:space-x-5 px-6 grid grid-rows-1 md:flex justify-center">
             {faculty.map((item, index) => (
               <div className="mt-10" key={index}>
                 <div
-                  className={`text-center bg-primary-white w-[20rem] md:border rounded-md py-8 px-6 relative overflow-hidden transition-height duration-300 ${
+                  className={`text-center bg-primary-white w-[16rem] lg:w-[20rem] md:border rounded-md py-8 px-6 relative overflow-hidden transition-height duration-300 ${
                     index === expandedIndex
                       ? "h-[17rem] "
                       : "h-[5.5rem] cursor-pointer"
