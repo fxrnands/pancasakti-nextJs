@@ -47,7 +47,7 @@ function Navbar() {
               </div>
               <div className="flex items-center ">
                 <button className="border font-bold uppercase w-24 lg:w-36 shadow-md py-1 text-white rounded-full text-[8px] lg:text-xs border-primary-blue bg-primary-blue hover:bg-blue-800">
-                  <p>Download</p>
+                  <p>Download </p>
                   <p>Formulir</p>
                 </button>
               </div>
