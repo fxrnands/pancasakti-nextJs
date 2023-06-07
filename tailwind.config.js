@@ -25,7 +25,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "home-container": "url('/header.png')",
+        "about-container": "url('/about_header.png')",
       },
     },
   },
