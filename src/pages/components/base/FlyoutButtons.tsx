@@ -31,7 +31,7 @@ export default function Button({ list, buttonName }: ButtonProps) {
                   className="group relative p-2 flex gap-x-6 rounded-[4px] hover:bg-gray-200"
                 >
                   <div>
-                    <a href={"/"} className="font-semibold text-gray-900">
+                    <a href={"/."} className="font-semibold text-gray-900">
                       {item}
                     </a>
                   </div>
