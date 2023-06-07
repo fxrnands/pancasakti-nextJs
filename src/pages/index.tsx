@@ -65,7 +65,7 @@ export default function Home() {
               fugiat eius sint ea, similique animi vitae rem quam fuga
               architecto accusantium illo exercitationem, repellendus quas non
               ex. Alias dolor placeat voluptatibus eaque fugit ad recusandae
-              delectus ab. Doloremque, quod pariatur..
+              delectus ab. Doloremque, quod pariatur.
             </p>
           </div>
         </div>
