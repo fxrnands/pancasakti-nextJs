@@ -3,3 +3,4 @@ export { default as Logo2 } from "./pancasakti_navbar.png"
 export { default as Header } from "./header.png"
 export { default as LogoHeader } from './pancasakti_header.png'
 export { default as AboutHeader } from './about_header.png'
+export { default as Rektor } from './rektor.jpeg'
