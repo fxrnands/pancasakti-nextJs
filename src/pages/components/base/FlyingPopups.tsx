@@ -20,7 +20,7 @@ export default function FlyingPopups() {
                 </div>
                 <div className="ml-3 lg:mt-1 -mt-0.5 w-0 flex-1 ">
                   <Link
-                    href={`https://wa.me/081260002880`}
+                    href={`https://wa.me/6281260002880`}
                     className="lg:text-base text-[12px] text-white font-bold"
                   >
                     WhatsApp Center
