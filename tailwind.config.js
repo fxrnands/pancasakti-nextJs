@@ -25,6 +25,9 @@ module.exports = {
           grey: "#52616B",
           blue: "#0A84FF",
         },
+        tertiary: {
+          grey: "#68696E"
+        }
       },
       backgroundImage: {
         "about-container": "url('/about_header.png')",

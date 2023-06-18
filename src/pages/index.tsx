@@ -105,11 +105,13 @@ export default function Home() {
       </div>
       <div className=" -mt-[48rem] bottom-[48rem]">
         <div className=" lg:-bottom-[11rem]">
-          <div className="bg-primary-grey py-4 px-4 lg:pt-6 lg:pb-8">
-            <h1 className="lg:text-2xl mb-1 max-w-7xl mx-auto text-sm font-bold">
-              Pendaftaran Mahasiswa Baru
-            </h1>
-            <div className="border-b w-[194px] lg:w-[340px] lg:ml-16 border-b-black" />
+          <div className="bg-primary-grey  py-4 px-4 lg:pt-6 lg:pb-8">
+            <div className=" w-[170px]  lg:w-[340px] lg:ml-16">
+              <h1 className="lg:text-2xl mb-1 mx-auto text-xs font-bold">
+                Pendaftaran Mahasiswa Baru
+              </h1>
+              <div className="border-b border-b-black" />
+            </div>
           </div>
           <div className="grid lg:px-24 lg:mt-8 lg:flex justify-between">
             <div className="w-[20rem] mt-4 lg:mr-16 lg:w-[50%]">
@@ -124,7 +126,7 @@ export default function Home() {
           <Image src={Pmb3} width={1000} alt="" />
         </div>
       </div>
-      <div className="relative mt-12">
+      <div className="relative mt-2">
         <div className="bg-primary-grey py-4 px-4 lg:pt-6 lg:pb-8">
           <h1 className="lg:text-2xl mb-1 max-w-7xl mx-auto text-sm font-bold">
             {`Gallery Foto & Video`}
