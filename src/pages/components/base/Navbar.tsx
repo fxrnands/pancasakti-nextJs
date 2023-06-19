@@ -1,10 +1,12 @@
 import { Popover } from "@headlessui/react";
 import Image from "next/image";
-import { Logo, Logo2 } from "../../../../public";
-import React from "react";
+import { Indonesia, English, Logo, Logo2, LogoNew } from "../../../../public";
+import React, { useState } from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import { AiOutlineBars } from "react-icons/ai";
 
 const navigation = [
   { name: "Beranda", href: "#", current: true },
@@ -17,71 +19,101 @@ function classNames(...classes: any[]) {
 }
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false); //state untuk mengendalikan keadaan menu terbuka/tertutup
+  const [language, setLanguage] = useState("indonesia"); //state untuk bahasa, defaultnya adalah "indonesia"
+
+  //fungsi untuk mengubah keadaan menu
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const changeLanguage = () => {
+    setLanguage(language === "indonesia" ? "english" : "indonesia");
+  };
+
   return (
     <Disclosure as="nav" className="bg-primary-white">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="relative flex sm:justify-center h-16 items-center lg:justify-between">
+              <div className="relative inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-between rounded-lg p-2 text-gray-600 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <AiOutlineBars
+                      className="block h-6 w-6"
+                      aria-hidden="true"
+                    />
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 justify-between ml-10 sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+              {/* div logo */}
+              <div className="flex justify-center items-center sm:items-stretch lg:justify-between">
+                <div className="flex justify-end items-center w-24 h-10 lg:h-10 lg:mt-2">
                   <Image
-                    width={50}
-                    className="mr-2 block h-10"
+                    width={45}
+                    className="block relative shadow-md"
                     src={Logo}
                     alt="PANCASAKTI_UNIVERSITY"
                   />
-                  <Image
-                    width={0}
-                    className="block h-9 mr-4 w-auto lg:block"
-                    src={Logo2}
-                    alt="PANCASAKTI_UNIVERSITY"
-                  />
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                <div className="w-32 h-12 lg:h-12 lg:mt-2">
+                    <Image
+                      width={200}
+                      className="block h-8 relative top-2 shadow-md"
+                      src={Logo2}
+                      alt="PANCASAKTI_UNIVERSITY"
+                    />
+                </div>
+              </div>
+              {/* div item beranda */}
+              <div>
+                <div className="hidden sm:flex flex-1 justify-center items-center mt-2">
+                  <div className="flex items-center justify-center space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-700 text-white"
-                            : "text-black hover:bg-gray-700 hover:text-white",
-                          "rounded-lg px-3 py-2 text-md font-medium"
+                            ? "text-black font-extrabold"
+                            : "text-gray-600 hover:text-black font-bold",
+                          "rounded-md px-3 py-2 text-md font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-3">
-                  <div>
-                    <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              {/* div switch button language */}
+              <div className="absolute flex gap-x-0 inset-y-0 right-0 items-center pr-0 sm:static sm:inset-auto sm:ml-0 sm:pr-0">
+                {/* Language */}
+                <Menu as="div" className="gap-x-0 relative ml-3">
+                  <div className="gap-x-0 mr-8 w-8 h-8 lg:w-full">
+                    <Menu.Button className="flex w-7 h-7 rounded-full bg-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-200">
                       <span className="sr-only">Open user menu</span>
-                      <img
-                        className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      <Image
+                        width={50}
+                        className="gap-x-0 h-7 w-7 rounded-full"
+                        src={Indonesia}
+                        alt=""
+                      />
+                      <Image
+                        width={50}
+                        className="gap-x-0 h-7 w-7 rounded-full"
+                        src={English}
                         alt=""
                       />
                     </Menu.Button>
                   </div>
+
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-100"
@@ -90,49 +122,7 @@ export default function Navbar() {
                     leave="transition ease-in duration-75"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
-                  >
-                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Your Profile
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Settings
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Sign out
-                          </a>
-                        )}
-                      </Menu.Item>
-                    </Menu.Items>
-                  </Transition>
+                  ></Transition>
                 </Menu>
               </div>
             </div>
@@ -147,9 +137,9 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-300 text-black"
-                      : "text-gray-400 hover:bg-gray-600 hover:text-black",
-                    "block rounded-lg px-3 py-2 text-base font-medium"
+                      ? "bg-gray-400 text-black"
+                      : "text-gray-500 hover:bg-gray-400 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
@@ -164,52 +154,3 @@ export default function Navbar() {
   );
 }
 
-{
-  <>
-    <Popover
-      as="header"
-      className={({ open }) =>
-        classNames(
-          open ? "fixed inset-0 z-40 overflow-y-auto" : "",
-          "lg:static bg-primary-grey lg:overflow-y-visible"
-        )
-      }
-    >
-      {({ open }) => (
-        <>
-          <div className="mx-auto h-[3.5rem] lg:h-[5rem] flex justify-between max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="relative flex justify-between ">
-              <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
-                <div className="flex flex-shrink-0 items-center">
-                  <div className="flex w-28 lg:w-full lg:mt-6 mt-12">
-                    <div>
-                      <Image
-                        src={Logo}
-                        alt="PANCASAKTI_UNIVERSITY"
-                        width={50}
-                        className="mr-2"
-                      />
-                    </div>
-                    <div className="h-20 relative top-2">
-                      <Image
-                        src={Logo2}
-                        alt="PANCASAKTI_UNIVERSITY"
-                        width={200}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center ">
-              <button className="border font-bold uppercase w-14 lg:w-36 shadow-md py-1 text-white rounded-full text-[6px] lg:text-xs border-primary-blue bg-primary-blue hover:bg-blue-800">
-                <p>Download </p>
-                <p>Formulir</p>
-              </button>
-            </div>
-          </div>
-        </>
-      )}
-    </Popover>
-  </>;
-}
