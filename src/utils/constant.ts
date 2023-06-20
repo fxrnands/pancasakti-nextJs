@@ -1,4 +1,4 @@
-import { Header } from "../../public";
+import { Gallery, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6, Gallery7, Header, Header2, Header3 } from "../../public";
 
 //! FACULTY DATA
 export const faculty = [
@@ -71,16 +71,30 @@ export const faculty = [
 
 //! SWIPER GALLERY
 export const images = [
-  "https://swiperjs.com/demos/images/nature-1.jpg",
-  "https://swiperjs.com/demos/images/nature-2.jpg",
-  "https://swiperjs.com/demos/images/nature-3.jpg",
-  "https://swiperjs.com/demos/images/nature-4.jpg",
-  "https://swiperjs.com/demos/images/nature-5.jpg",
-  "https://swiperjs.com/demos/images/nature-6.jpg",
-  "https://swiperjs.com/demos/images/nature-7.jpg",
-  "https://swiperjs.com/demos/images/nature-8.jpg",
-  "https://swiperjs.com/demos/images/nature-9.jpg",
+  // Gallery,
+  Gallery2,
+  // Gallery3,
+  Gallery4,
+  Gallery5,
+  Gallery6,
+  Gallery7,
 ];
 
 //! SLIDER HEADER
-export const imagesHeader = [Header, "https://mdbcdn.b-cdn.net/img/new/slides/042.webp"];
+export const imagesHeader = [Header, Header2, Header3];
+
+//! HISTORY
+export const history = "Adalah Universitas swasta yang secara resmi dikukuhkan pada tanggal 11 Juni 2020, ditandai dengan ditandatanganinya Surat Keputusan Mentri Pendidikan dan Kebudayaan Nomor : 575/M/2020 atas penggabungan Sekolah Tinggi Keguruan dan Ilmu Pendidikan (STKIP) Panca Sakti di Bekasi, Sekolah Tinggi Ilmu Ekonomi Indonesia Raya di Jakarta dan Sekolah Tinggi Manajemen Informatika dan Komputer di Cikarang yang saat ini berkembang menjadi Universitas Panca Sakti Bekasi yang diselenggarakan oleh Yayasan Panca Sakti Bekasi. Sejak 08 Agustus 2009 awal dari pembentukan Perguruan Tinggi Panca Sakti dibawah naungan Yayasan Panca Sakti Bekasi yang saat ini berkembang menjadi Universitas Panca Sakti memiliki 3 Fakultas dan Program Pascasarjana yang terdiri dari Fakultas Ilmu Pendidikan, Fakultas Ekonomi & Bisnis serta Fakultas sains dan teknologi yang seluruhnya memiliki 9 Jurusan serta Program Studi Magister PAUD (S-2)"
+
+//! VISION
+export const vision = "Menghasilkan Lulusan Unggul, Berkarakter, Technopreneurship, Menguasai Teknologi Informasi untuk Bersaing di Tingkat Nasional pada Tahun 2029."
+
+//! MISSION
+export const mission = [
+  "Melaksanakan pembelajaran yang adaptif, inovatif, peduli lingkungan, fleksibel, dan menguasai kompetensi teknologi informasi.",
+  "Mengintegrasikan kurikulum yang berkarakter serta mengaplikasikan teknologi informasi.",
+  "Mengembangkan budaya akademik dalam penelitian multi disiplin yang bermanfaat bagi kepentingan akademik, masyarakat dan lingkungan.",
+  // "Mengembangakan budaya akademik dalam penelitian multi disiplin yang bermanfaat bagi kepentingan akademik, masyarakat dan lingkungan.",
+  // "Meningkatkan peran Universitas dalam penyelesaian persoalan berdasarkan pada wawasan keilmuan bagi terwujudnya masyarakat yang madani.",
+  // "Membangun kerjasama dengan berbagai pihak, untuk pengembangan dan peningkatan kualitas pembelajaran, penelitian dan pengabdian kepada masyarakat."
+]
