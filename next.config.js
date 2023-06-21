@@ -5,6 +5,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ["tailwindui.com"],
+    domains: ["swiperjs.com", "picsum.photos", "mdbcdn.b-cdn.net"],
   },
 };

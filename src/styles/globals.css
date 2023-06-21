@@ -20,3 +20,33 @@ body {
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: gray;
+}
+
+.mySwiper {
+  width: 40rem;
+}
+
+.swiper-button-prev {
+  margin-right: 50px;
+}
+
+.swiper-button-next {
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    width: 15rem;
+  }
+  .swiper-button-prev {
+    margin-right: 50px;
+  }
+
+  .swiper-button-next {
+    margin-left: 50px;
+  }
+}
