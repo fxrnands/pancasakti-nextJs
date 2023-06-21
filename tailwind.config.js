@@ -15,8 +15,8 @@ module.exports = {
       },
       colors: {
         primary: {
-          grey: "#F6F6F6",
-          blue: "#337AB7",
+          grey: "#D9D9D9",
+          blue: "#004AAD",
           red: "#B70404",
           white: "#F9F5F6",
         },
@@ -25,7 +25,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "home-container": "url('https://picsum.photos/seed/picsum/400/800')",
+        "home-container": "url('/header.png')",
       },
     },
   },

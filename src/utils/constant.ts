@@ -21,4 +21,10 @@ export const faculty = [
         "S1 Pendidikan Bahasa Inggris",
       ],
     },
+    {
+      name: "Program Pascasarjana",
+      department: [
+        "S2 Magister Paud",
+      ],
+    },
   ];
