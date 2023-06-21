@@ -12,7 +12,7 @@ export { default as Pmb2 } from './pmb2.jpeg'
 export { default as Pmb3 } from './pmb3.jpeg'
 
 export { default as Gallery } from "./gallery1.jpeg"
-export { default as Gallery2 } from "./gallery2.jpeg"
+export { default as Gallery2 } from './gallery2 .jpeg'
 export { default as Gallery3 } from "./gallery3.jpeg"
 export { default as Gallery4 } from "./gallery4.jpeg"
 export { default as Gallery5 } from "./gallery5.jpeg"

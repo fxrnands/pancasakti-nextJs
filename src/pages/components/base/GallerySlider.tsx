@@ -33,13 +33,15 @@ export default function GallerySlider() {
       <Swiper {...swiperParams}>
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <Image
-              alt=""
-              width={1000}
-              className="object-contain w-full"
-              height={1000}
-              src={image}
-            />
+            <div className="h-[140px] flex item-center object-cover">
+              <Image
+                alt=""
+                width={1000}
+                className="object-contain"
+                height={1000}
+                src={image}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
