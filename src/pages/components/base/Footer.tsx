@@ -55,26 +55,26 @@ const navigation = [
 
 function Footer() {
   return (
-    <footer className="bg-gray-600 shadow-md bottom-0 md:space-x-5 px-4">
+    <footer className="bg-gray-600 shadow-md bottom-0 md:space-x-5 pl-2 pr-3">
       <div className="max-w-7xl pt-2 me-0">
         
-        <div className="relative grid grid-cols-3 sm:grid-cols-2 md:grid-cols-4 gap-3 mb-6 mt-6">
+        <div className="relative grid grid-cols-3 gap-x-0 sm:grid-cols-2 md:grid-cols-4 mb-6 mt-6">
           
           <div className="relative flex justify-end place-items-start mpy-8 sm:items-stretch lg:justify-center">
             
-            <div className="flex justify-end absolute ml-0 mr-0">
-              <div className="w-8 h-10 gap-0 lg:w-10 md:w-10">
+            <div className="flex justify-center absolute ml-0 mr-0 lg:w-42 lg:h-12">
+              <div className="h-10">
                 <Image
-                  width={35}
-                  className="ml-0 shadow-lg"
+                  width={40}
+                  className="lg:w-9 ml-0 top-1 relative"
                   src={Logo}
                   alt="PANCASAKTI_UNIVERSITY"
                 />
               </div>
-              <div className="gap-x-0 w-20 h-8 md:h-8 md:w-28 lg:h-8 lg:w-28">
+              <div className="h-8 md:h-8 md:w-28 lg:h-8 lg:w-auto">
                 <Image
-                  width={200}
-                  className="block h-8 relative shadow-lg top-0"
+                  width={150}
+                  className="block lg:w-auto h-auto lg:h-7 top-1.5 lg:top-1.5 relative"
                   src={Logo2}
                   alt="PANCASAKTI_UNIVERSITY"
                 />
