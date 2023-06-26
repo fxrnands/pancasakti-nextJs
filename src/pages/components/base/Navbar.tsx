@@ -36,7 +36,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex sm:justify-center h-16 items-center lg:justify-between">
+            <div className="relative flex gap-x-10 sm:justify-center h-16 items-center lg:justify-between">
               <div className="relative inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-white">
@@ -53,25 +53,25 @@ export default function Navbar() {
               </div>
               {/* div logo */}
               <div className="flex justify-center items-center sm:items-stretch lg:justify-between">
-                <div className="flex justify-end items-center w-24 h-10 lg:h-10 lg:mt-2">
+                <div className="items-center h-10 lg:h-10 lg:mt-2">
                   <Image
                     width={45}
-                    className="block relative shadow-md"
+                    className="block w-10 relative"
                     src={Logo}
                     alt="PANCASAKTI_UNIVERSITY"
                   />
                 </div>
                 <div className="w-32 h-12 lg:h-12 lg:mt-2">
-                    <Image
-                      width={200}
-                      className="block h-8 relative top-2 shadow-md"
-                      src={Logo2}
-                      alt="PANCASAKTI_UNIVERSITY"
-                    />
+                  <Image
+                    width={200}
+                    className="block h-8 relative top-2"
+                    src={Logo2}
+                    alt="PANCASAKTI_UNIVERSITY"
+                  />
                 </div>
               </div>
               {/* div item beranda */}
-              <div>
+              <div className="lg:mr-24">
                 <div className="hidden sm:flex flex-1 justify-center items-center mt-2">
                   <div className="flex items-center justify-center space-x-4">
                     {navigation.map((item) => (
@@ -82,7 +82,7 @@ export default function Navbar() {
                           item.current
                             ? "text-black font-extrabold"
                             : "text-gray-600 hover:text-black font-bold",
-                          "rounded-md px-3 py-2 text-md font-medium"
+                          "rounded-md pr-3 py-2 text-md font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -153,4 +153,3 @@ export default function Navbar() {
     </Disclosure>
   );
 }
-
