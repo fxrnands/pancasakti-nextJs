@@ -19,9 +19,11 @@ module.exports = {
           blue: "#004AAD",
           red: "#B70404",
           white: "#F9F5F6",
+          green: "#20AB4B",
         },
         secondary: {
           grey: "#52616B",
+          blue: "#0A84FF",
         },
       },
       backgroundImage: {
