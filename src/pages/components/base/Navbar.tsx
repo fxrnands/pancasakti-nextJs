@@ -126,12 +126,6 @@ export default function Navbar() {
                   ></Transition>
                 </Menu>
               </div>
-              <div className="flex items-center ">
-                <button className="border font-bold uppercase w-14 lg:w-36 shadow-md py-1 text-white rounded-full text-[6px] lg:text-xs border-primary-blue bg-primary-blue hover:bg-blue-800">
-                  <p>{`Download`}</p>
-                  <p>{`Formulir`}</p>
-                </button>
-              </div>
             </div>
           </div>
 
