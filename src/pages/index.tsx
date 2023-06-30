@@ -15,6 +15,10 @@ export default function Home() {
     router.push("http://pmb.panca-sakti.edufecta.com/registrasi?rf=02b85b");
   };
 
+  const handleDetail = () => {
+    router.push("/detail");
+  };
+
   return (
     <>
       <div className="relative h-[40rem]">

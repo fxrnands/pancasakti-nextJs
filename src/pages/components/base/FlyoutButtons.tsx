@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import { useRouter } from "next/router";
 
 export interface ButtonProps {
   list: string[];
@@ -7,6 +8,10 @@ export interface ButtonProps {
 }
 
 export default function Button({ list, buttonName }: ButtonProps) {
+  const router = useRouter();
+  const handleDetail = () => {
+    router.push("/detail");
+  };
   return (
     <Popover className="relative">
       <Popover.Button className="inline-flex justify-center uppercase outline-none w-[15rem] rounded-[30px] px-2 py-2 items-center text-sm font-bold leading-6 text-primary-blue bg-gradient-to-r to-[#68696E] via-[#68696E] from-primary-grey">
@@ -32,14 +37,12 @@ export default function Button({ list, buttonName }: ButtonProps) {
                   key={index}
                   className="group relative p-2 uppercase flex gap-x-6 rounded-[4px] hover:bg-tertiary-grey"
                 >
-                  <div>
-                    <a
-                      href={"/."}
-                      style={{ textShadow: "0 0 10px #000000" }}
-                      className="font-bold text-xs text-white"
-                    >
-                      {item}
-                    </a>
+                  <div
+                    onClick={handleDetail}
+                    style={{ textShadow: "0 0 10px #000000" }}
+                    className="font-bold text-xs text-white"
+                  >
+                    {item}
                   </div>
                 </div>
               ))}
