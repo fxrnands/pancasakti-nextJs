@@ -4,6 +4,9 @@ export { default as Header } from "./header.png"
 export { default as Header2 } from "./header2.jpeg"
 export { default as Header3 } from "./header3.jpeg"
 export { default as LogoHeader } from './pancasakti_header.png'
+export { default as Indonesia } from "./Indonesia.png"
+export { default as English } from "./English.png"
+export { default as LogoNew } from "./pancasakti_new.png"
 export { default as AboutHeader } from './about_header.png'
 export { default as Rektor } from './rektor.jpeg'
 export { default as Brosur } from './brosur.png'
