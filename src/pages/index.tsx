@@ -81,6 +81,7 @@ export default function Home() {
                 Fakultas sains dan teknologi yang seluruhnya memiliki 9 Jurusan
                 serta Program Studi Magister PAUD (S-2)`}
               </p>
+
             </div>
           </div>
         </div>
