@@ -52,7 +52,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               {/* div logo */}
-              <div className="flex justify-center items-center sm:items-stretch lg:justify-between">
+              <div className="flex justify-center -ml-4 items-center lg:justify-between">
                 <div className="items-center h-10 lg:h-10 lg:mt-2">
                   <Image
                     width={45}

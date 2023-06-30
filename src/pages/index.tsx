@@ -81,24 +81,6 @@ export default function Home() {
                 Fakultas sains dan teknologi yang seluruhnya memiliki 9 Jurusan
                 serta Program Studi Magister PAUD (S-2)`}
               </p>
-              <div className="flex mt-4 lg:mt-8 justify-between lg:text-base text-[8px]">
-                <div className="w-[50%] mr-4 lg:mr-8">
-                  <p className="text-xs lg:text-base font-bold">{`Visi`}</p>
-                  <p>
-                    {`Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                    similique qui numquam repellat modi provident error incidunt
-                    quisquam labore molestiae.`}
-                  </p>
-                </div>
-                <div className="w-[50%] ">
-                  <p className="text-xs lg:text-base font-bold">Misi</p>
-                  <p className="text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                    corrupti libero corporis labore delectus illo magnam vel
-                    soluta ex tenetur!
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
