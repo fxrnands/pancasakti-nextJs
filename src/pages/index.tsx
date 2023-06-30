@@ -4,7 +4,7 @@ import Image from "next/image";
 import { LogoHeader } from "../../public";
 import { useRouter } from "next/router";
 import Button from "./components/base/FlyoutButtons";
-import { faculty } from "@/utils/constant";
+import { faculty, history, mission, vision } from "@/utils/constant";
 import ImageSlider from "./components/base/Slider";
 import Slider from "./components/base/GallerySlider";
 
@@ -57,9 +57,9 @@ export default function Home() {
             className="w-full lg:h-[40rem] h-[24rem] object-cover"
             alt=""
           />
-          <div className="absolute bottom-[3rem] sm:bottom-14 md:bottom-40 lg:bottom-44 px-2 text-white">
+          <div className="absolute top-[1rem] sm:top-14 md:bottom-40 lg:top-12 px-2 text-white">
             <h1 className="text-center lg:text-4xl font-bold text-xl">
-              Sejarah
+              {`Sejarah`}
             </h1>
             <div className="mt-4 lg:mt-12 lg:px-[10rem] px-2 lg:text-xl text-justify">
               <h1 className="text-[10px] font-bold xl:text-base">{`UNIVERSITAS PANCA SAKTI BEKASI (PSUB)`}</h1>
@@ -81,17 +81,20 @@ export default function Home() {
                 Fakultas sains dan teknologi yang seluruhnya memiliki 9 Jurusan
                 serta Program Studi Magister PAUD (S-2)`}
               </p>
+
             </div>
           </div>
         </div>
       </div>
       <div className=" -mt-[48rem] bottom-[48rem]">
         <div className=" lg:-bottom-[11rem]">
-          <div className="bg-primary-grey py-4 px-4 lg:pt-6 lg:pb-8">
-            <h1 className="lg:text-2xl mb-1 max-w-7xl mx-auto text-sm font-bold">
-              Pendaftaran Mahasiswa Baru
-            </h1>
-            <div className="border-b w-[194px] lg:w-[340px] lg:ml-16 border-b-black" />
+          <div className="bg-primary-grey  py-4 px-4 lg:pt-6 lg:pb-8">
+            <div className=" w-[170px]  lg:w-[340px] lg:ml-16">
+              <h1 className="lg:text-2xl mb-1 mx-auto text-xs font-bold">
+                Pendaftaran Mahasiswa Baru
+              </h1>
+              <div className="border-b border-b-black" />
+            </div>
           </div>
           <div className="grid lg:px-24 lg:mt-8 lg:flex justify-between">
             <div className="w-[20rem] mt-4 lg:mr-16 lg:w-[50%]">
@@ -106,7 +109,7 @@ export default function Home() {
           <Image src={Pmb3} width={1000} alt="" />
         </div>
       </div>
-      <div className="relative mt-12">
+      <div className="relative mt-2">
         <div className="bg-primary-grey py-4 px-4 lg:pt-6 lg:pb-8">
           <h1 className="lg:text-2xl mb-1 max-w-7xl mx-auto text-sm font-bold">
             {`Gallery Foto & Video`}
