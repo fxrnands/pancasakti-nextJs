@@ -32,7 +32,6 @@ export default function Navbar() {
   };
 
   return (
-
     <Disclosure as="nav" className="bg-primary-white">
       {({ open }) => (
         <>
