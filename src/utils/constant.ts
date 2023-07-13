@@ -1,6 +1,7 @@
 import { Gallery2, Gallery3, Gallery4, Gallery5, Gallery6, Gallery7, Header, Header2, Header3 } from "../../public";
 
 //! FACULTY DATA
+
 export const faculty = [
     {
       name: "Fakultas Ekonomi & Bisnis",

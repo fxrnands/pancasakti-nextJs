@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 export interface ButtonProps {
   list: string[];
   buttonName: string;
+  handleDetail: any;
 }
 
-export default function Button({ list, buttonName }: ButtonProps) {
+export default function Button({ list, buttonName, handleDetail }: ButtonProps) {
   const router = useRouter();
-  const handleDetail = () => {
-    router.push("/detail");
-  };
+
+  
   return (
     <Popover className="relative">
       <Popover.Button className="inline-flex justify-center uppercase outline-none w-[15rem] rounded-[30px] px-2 py-2 items-center text-sm font-bold leading-6 text-primary-blue bg-gradient-to-r to-[#68696E] via-[#68696E] from-primary-grey">
