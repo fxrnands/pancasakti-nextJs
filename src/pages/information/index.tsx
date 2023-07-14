@@ -21,28 +21,44 @@ const DetailPage = () => {
             <div>
               <ul className="px-6 mt-2 ml-4 text-gray-800 lg:px-4 lg:text-md list-decimal">
                 <li>
-                  {"Pendidikan Agama, Bahasa Inggris Basic, Communication & Editing Video dan Animasi, B. Indonesia, PPKN, Dasar-dasar Pendidikan, Filsafat Ilmu Pendidikan, Pengantar Akuntansi, Pengantar Ekonomi & Bisnis"}
+                  {
+                    "Pendidikan Agama, Bahasa Inggris Basic, Communication & Editing Video dan Animasi, B. Indonesia, PPKN, Dasar-dasar Pendidikan, Filsafat Ilmu Pendidikan, Pengantar Akuntansi, Pengantar Ekonomi & Bisnis"
+                  }
                 </li>
                 <li className="mt-2">
-                  {"Social Media, Perekonomian Indonesia, Statistik Bisnis, Bank & Lembaga Keuangan, PPKN, Pengantar Ekonomi Mikro, Pengantar Manajemen, Digital Business"}
+                  {
+                    "Social Media, Perekonomian Indonesia, Statistik Bisnis, Bank & Lembaga Keuangan, PPKN, Pengantar Ekonomi Mikro, Pengantar Manajemen, Digital Business"
+                  }
                 </li>
                 <li className="mt-2">
-                  {"Pemasaran & Promosi, Strategi Pembelajaran, Bank & Lembaga Keuangan Lain, Akuntansi Biaya, Akuntansi Keuangan, Kurikulum & Buku Teks Ekonomi, Ekonomi Pendidikan, Teori Ekonomi Makro."}
+                  {
+                    "Pemasaran & Promosi, Strategi Pembelajaran, Bank & Lembaga Keuangan Lain, Akuntansi Biaya, Akuntansi Keuangan, Kurikulum & Buku Teks Ekonomi, Ekonomi Pendidikan, Teori Ekonomi Makro."
+                  }
                 </li>
                 <li className="mt-2">
-                  {"Artificial Intelligent, Perilaku Organisasi, Akuntansi Manajemen, Manajemen SDM, Manajemen Operasional, Ekonomi Syariah, Manajemen Logistik, Sistem Informasi Manajemen."}
+                  {
+                    "Artificial Intelligent, Perilaku Organisasi, Akuntansi Manajemen, Manajemen SDM, Manajemen Operasional, Ekonomi Syariah, Manajemen Logistik, Sistem Informasi Manajemen."
+                  }
                 </li>
                 <li className="mt-2">
-                  {"Public Speaking, Evaluasi Pembelajaran, Perekonomian Internasional, Profesi Keguruan, Metodologi Penelitian, Manajemen Berbasis Sekolah, Pemantapan Kemampuan Mengajar, Bank & Lembaga Keuangan Lain, Ekonomi Pendidikan."}
+                  {
+                    "Public Speaking, Evaluasi Pembelajaran, Perekonomian Internasional, Profesi Keguruan, Metodologi Penelitian, Manajemen Berbasis Sekolah, Pemantapan Kemampuan Mengajar, Bank & Lembaga Keuangan Lain, Ekonomi Pendidikan."
+                  }
                 </li>
                 <li className="mt-2">
-                  {"Pendidikan Anti Korupsi, B. Inggris Intermediate, Bisnis Network, Leadership, Service Excellent, Kecerdasan Emosional, Kewirausahaan."}
+                  {
+                    "Pendidikan Anti Korupsi, B. Inggris Intermediate, Bisnis Network, Leadership, Service Excellent, Kecerdasan Emosional, Kewirausahaan."
+                  }
                 </li>
                 <li className="mt-2">
-                  {"Pendidikan Karakter, B. Inggris Advance, Kreatifitas dan Inovasi, Studi Kelayakan Bisnis, Simulasi Bisnis, PPL, Pengabdian Masyarakat."}
+                  {
+                    "Pendidikan Karakter, B. Inggris Advance, Kreatifitas dan Inovasi, Studi Kelayakan Bisnis, Simulasi Bisnis, PPL, Pengabdian Masyarakat."
+                  }
                 </li>
                 <li className="mt-2">
-                  {"Seminar hasil & Publikasi Penelitian Dan Seminar Internasional."}
+                  {
+                    "Seminar hasil & Publikasi Penelitian Dan Seminar Internasional."
+                  }
                 </li>
               </ul>
             </div>
@@ -60,7 +76,7 @@ const DetailPage = () => {
               Kelas Reguler Pagi
             </h2>
             <h2 className="text-center text-gray-500 rounded-md font-bold">
-              (Senin - Jum'at) Pukul: 09.00 - 14.30 WIB
+              {`(Senin - Jum'at) Pukul: 09.00 - 14.30 WIB`}
             </h2>
           </div>
           <div className="py-2 mx-4 lg:mx-24 mt-9 rounded-md bg-yellow-200">
@@ -68,7 +84,7 @@ const DetailPage = () => {
               Kelas Reguler Sore
             </h2>
             <h2 className="text-center text-gray-500 rounded-md font-bold">
-              (Senin - Jum'at) Pukul: 18.30 - 20.00 WIB
+              {`(Senin - Jum'at) Pukul: 18.30 - 20.00 WIB`}
             </h2>
           </div>
           <div className="py-2 mx-4 lg:mx-24 mt-9 rounded-md bg-sky-200">
