@@ -5,7 +5,7 @@ import { Gallery2, Gallery3, Gallery4, Gallery5, Gallery6, Gallery7, Header, Hea
 export const faculty = [
     {
       name: "Fakultas Ekonomi & Bisnis",
-      department: ["S1 Akuntansi", "S1 Manajemen"],
+      department: ["S1 Akuntansi", "S1 Manajemen",],
     },
     {
       name: "Fakultas Sains & Teknologi",
