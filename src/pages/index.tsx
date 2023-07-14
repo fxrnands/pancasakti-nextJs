@@ -15,6 +15,10 @@ export default function Home() {
     router.push("http://pmb.panca-sakti.edufecta.com/registrasi?rf=02b85b");
   };
 
+  const handleDetail = () => {
+    router.push("/information");
+  };
+
   return (
     <>
       <div className="relative h-[40rem]">
@@ -40,6 +44,7 @@ export default function Home() {
                 key={index}
                 list={faculty.department}
                 buttonName={faculty.name}
+                handleDetail={handleDetail}
               />
             ))}
           </div>
@@ -81,7 +86,6 @@ export default function Home() {
                 Fakultas sains dan teknologi yang seluruhnya memiliki 9 Jurusan
                 serta Program Studi Magister PAUD (S-2)`}
               </p>
-
             </div>
           </div>
         </div>
