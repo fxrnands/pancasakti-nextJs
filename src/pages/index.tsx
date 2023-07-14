@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   const handleDetail = () => {
-    router.push("/detail");
+    router.push("/information");
   };
 
   return (
@@ -44,6 +44,7 @@ export default function Home() {
                 key={index}
                 list={faculty.department}
                 buttonName={faculty.name}
+                handleDetail={handleDetail}
               />
             ))}
           </div>
@@ -85,7 +86,6 @@ export default function Home() {
                 Fakultas sains dan teknologi yang seluruhnya memiliki 9 Jurusan
                 serta Program Studi Magister PAUD (S-2)`}
               </p>
-
             </div>
           </div>
         </div>
