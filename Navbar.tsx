@@ -1,6 +1,7 @@
 import { Popover } from "@headlessui/react";
 import Image from "next/image";
-import { Indonesia, English, Logo, Logo2, LogoNew } from "../../../../public";
+// import { Indonesia, English, Logo, Logo2, LogoNew } from "../../../../public";
+import { Indonesia, English, Logo, Logo2, LogoNew } from "./public";
 import React, { useState } from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
